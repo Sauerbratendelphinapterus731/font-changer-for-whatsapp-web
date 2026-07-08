@@ -84,7 +84,7 @@ no external servers. Everything runs locally in your browser. It requests only w
 | `host: https://web.whatsapp.com/*` | Apply the font on WhatsApp Web only. |
 
 No other sites are touched, and no font files are downloaded — it only references fonts already
-installed on your machine.
+installed on your machine. See the full [Privacy Policy](PRIVACY.md).
 
 ## How it works
 
