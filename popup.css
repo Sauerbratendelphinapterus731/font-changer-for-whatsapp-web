@@ -1,5 +1,5 @@
 :root {
-  --wa-green: #00a884;
+  --accent: #2563eb;
   --bg: #ffffff;
   --fg: #111b21;
   --muted: #667781;
@@ -109,7 +109,7 @@ select {
 input:focus,
 select:focus {
   outline: none;
-  border-color: var(--wa-green);
+  border-color: var(--accent);
 }
 
 .unit {
@@ -133,7 +133,7 @@ button.ghost {
 }
 
 button.ghost:hover {
-  border-color: var(--wa-green);
+  border-color: var(--accent);
 }
 
 button.danger:hover {
@@ -213,7 +213,7 @@ button.danger:hover {
 }
 
 .combo-menu li[aria-selected="true"] {
-  color: var(--wa-green);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -260,7 +260,7 @@ button.danger:hover {
 }
 
 .segmented input:checked + span {
-  background: var(--wa-green);
+  background: var(--accent);
   color: #fff;
 }
 
@@ -286,7 +286,7 @@ button.danger:hover {
 
 .note summary {
   cursor: pointer;
-  color: var(--wa-green);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -305,7 +305,7 @@ button.danger:hover {
 
 .status {
   font-size: 11px;
-  color: var(--wa-green);
+  color: var(--accent);
   min-height: 14px;
 }
 
@@ -345,7 +345,7 @@ button.danger:hover {
 }
 
 .switch input:checked + .slider {
-  background: var(--wa-green);
+  background: var(--accent);
 }
 
 .switch input:checked + .slider::before {
