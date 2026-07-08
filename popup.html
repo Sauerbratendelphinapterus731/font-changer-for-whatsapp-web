@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Font Changer for WhatsApp Web</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="titles">
+        <h1>Font Changer</h1>
+        <span class="subtitle">for WhatsApp Web</span>
+      </div>
+      <label class="switch" title="Turn the custom font on/off">
+        <input type="checkbox" id="enabled" checked />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <div class="body">
+      <!-- Font family -->
+      <div class="field">
+        <label for="fontFamily">Font</label>
+        <div class="row">
+          <div class="combo" id="fontCombo">
+            <input
+              type="text"
+              id="fontFamily"
+              placeholder="Search or type a font…"
+              autocomplete="off"
+              spellcheck="false"
+              role="combobox"
+              aria-expanded="false"
+              aria-controls="fontMenu"
+            />
+            <button type="button" id="fontToggle" class="combo-arrow" tabindex="-1" aria-label="Show all fonts">▾</button>
+            <ul id="fontMenu" class="combo-menu" role="listbox" hidden></ul>
+          </div>
+          <button id="loadFonts" class="ghost" title="Re-scan the fonts installed on your computer">
+            Rescan
+          </button>
+        </div>
+        <p class="hint" id="fontsHint">
+          Loading your installed fonts…
+        </p>
+      </div>
+
+      <!-- Font size -->
+      <div class="field">
+        <label for="fontSize">Size (px)</label>
+        <div class="row">
+          <select id="fontSize">
+            <option value="">Default</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+          </select>
+          <span class="unit">px</span>
+        </div>
+      </div>
+
+      <!-- Font weight -->
+      <div class="field">
+        <label for="fontWeight">Weight</label>
+        <div class="row">
+          <select id="fontWeight">
+            <option value="">Auto (don’t change)</option>
+            <option value="100">100 · Thin</option>
+            <option value="200">200 · Extra Light</option>
+            <option value="300">300 · Light</option>
+            <option value="400">400 · Normal</option>
+            <option value="500">500 · Medium</option>
+            <option value="600">600 · Semibold</option>
+            <option value="700">700 · Bold</option>
+            <option value="800">800 · Extra Bold</option>
+            <option value="900">900 · Black</option>
+          </select>
+        </div>
+        <p class="hint">Only affects fonts that ship multiple weights.</p>
+      </div>
+
+      <!-- Scope -->
+      <div class="field">
+        <label>Apply to</label>
+        <div class="segmented">
+          <label>
+            <input type="radio" name="scope" value="messages" checked />
+            <span>Messages</span>
+          </label>
+          <label>
+            <input type="radio" name="scope" value="interface" />
+            <span>Entire interface</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Live preview -->
+      <div class="field">
+        <label>Preview</label>
+        <div id="preview" class="preview">
+          The quick brown fox jumps over the lazy dog. 0123456789
+        </div>
+      </div>
+
+      <!-- Brave note (revealed by popup.js only when running in Brave) -->
+      <details class="note" id="braveNote" hidden>
+        <summary>Using Brave? Some fonts missing or not applying?</summary>
+        <p>
+          Brave randomizes font metrics to prevent fingerprinting, which can hide fonts
+          from the scan and stop some non-system fonts from rendering. Open the
+          <b>Brave Shields</b> icon on <b>web.whatsapp.com</b> → set
+          <b>Block fingerprinting</b> to <b>off</b> → reload the page. You can always
+          type an exact font name even if it isn't in the list.
+        </p>
+      </details>
+
+      <div class="actions">
+        <button id="reset" class="ghost danger">Reset to default</button>
+        <span id="status" class="status"></span>
+      </div>
+    </div>
+
+    <script src="fonts.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
